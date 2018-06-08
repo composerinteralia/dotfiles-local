@@ -1,0 +1,4 @@
+# ensure tmux is running
+if [[ -z "$TMUX" ]]; then
+  tat
+fi
