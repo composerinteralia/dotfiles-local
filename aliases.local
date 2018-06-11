@@ -1,2 +1,5 @@
+alias .c='cd ~/dotfiles-local'
+alias .s='source ~/.zshrc'
 alias be='bundle exec'
 alias dt='cd ~/Desktop'
+
