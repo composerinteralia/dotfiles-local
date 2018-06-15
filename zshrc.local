@@ -2,3 +2,9 @@
 if [[ -z "$TMUX" ]]; then
   tat
 fi
+
+# for cases where setup scripts write to .bash_profile
+if [[ -f "$HOME/.bash_profile" ]]; then
+  source "$HOME/.bash_profile"
+fi
+
