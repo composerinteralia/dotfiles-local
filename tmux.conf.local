@@ -17,6 +17,12 @@ bind K run-shell 'tmux switch-client -n \; kill-session -t "$(tmux display-messa
 # break pane into its own session
 bind C-b send-keys 'tat && exit' 'C-m'
 
+# Pane resizing
+bind -n S-Left resize-pane -L 10
+bind -n S-Right resize-pane -R 10
+bind -n S-Down resize-pane -D 10
+bind -n S-Up resize-pane -U 10
+
 # christoomey/vim-tmux-navigator
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
     | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
