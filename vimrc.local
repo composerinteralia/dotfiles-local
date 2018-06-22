@@ -1,5 +1,8 @@
 let test#strategy = "vimux"
 
+" Let vim know I use a dark background
+set background=dark
+
 " automatically rebalance windows on resize
 autocmd! VimResized
 autocmd VimResized * :wincmd =
