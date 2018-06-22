@@ -1,5 +1,9 @@
 let test#strategy = "vimux"
 
+" automatically rebalance windows on resize
+autocmd! VimResized
+autocmd VimResized * :wincmd =
+
 " Easily reload configuration
 noremap <leader>r :source $MYVIMRC<cr>
 
