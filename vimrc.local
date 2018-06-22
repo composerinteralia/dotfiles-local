@@ -1,1 +1,5 @@
 let test#strategy = "vimux"
+
+" Easily reload configuration
+noremap <leader>r :source $MYVIMRC<cr>
+
