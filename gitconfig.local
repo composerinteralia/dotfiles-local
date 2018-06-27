@@ -7,6 +7,7 @@
   b = branch
   br = branch --remote
   ca = commit --amend
+  cf = commit --fixup
   cl = clone
   cob = checkout -b
   com = checkout master
