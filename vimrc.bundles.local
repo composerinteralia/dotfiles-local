@@ -1,5 +1,10 @@
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'
+
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'benmills/vimux'
+
+UnPlug 'ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 

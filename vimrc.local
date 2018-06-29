@@ -8,5 +8,8 @@ autocmd! VimResized
 autocmd VimResized * :wincmd =
 
 " Easily reload configuration
-noremap <leader>r :source $MYVIMRC<cr>
+nnoremap <leader>r :source $MYVIMRC<cr>
+
+" Replace ctrlp with FZF
+nnoremap <C-P> :Files<CR>
 
