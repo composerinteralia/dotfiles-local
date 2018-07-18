@@ -1,7 +1,8 @@
+" Run tests in a separate tmux pane
 let test#strategy = "vimux"
 
-" Let vim know I use a dark background
-set background=dark
+" Use color scheme from https://github.com/arcticicestudio/nord-vim
+colorscheme nord
 
 " automatically rebalance windows on resize
 autocmd! VimResized
