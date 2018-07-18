@@ -10,3 +10,5 @@ UnPlug 'ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'mxw/vim-jsx'
+Plug 'prettier/vim-prettier'
