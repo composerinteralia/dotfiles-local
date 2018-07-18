@@ -16,3 +16,6 @@ nnoremap <C-P> :Files<CR>
 
 " Run prettier before writing files
 autocmd BufWritePre *.js Prettier
+
+" Edit a file  in the current directory
+nnoremap <leader>h :e %:h
