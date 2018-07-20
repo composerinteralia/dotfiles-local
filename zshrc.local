@@ -8,6 +8,8 @@ if [[ -f "$HOME/.bash_profile" ]]; then
   source "$HOME/.bash_profile"
 fi
 
+# handy keybindings
+bindkey "^N" history-search-forward
 
 # Don't wait to go into normal mode
 export KEYTIMEOUT=1
