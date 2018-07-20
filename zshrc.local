@@ -10,9 +10,10 @@ fi
 
 # handy keybindings
 bindkey "^N" history-search-forward
+bindkey "^Q" vi-cmd-mode
 
-# Don't wait to go into normal mode
-export KEYTIMEOUT=1
+# Don't use ^[ for vi-cmd-mode
+bindkey -r "^["
 
 # Show [NORMAL] when in normal mode
 function zle-line-init zle-keymap-select {
