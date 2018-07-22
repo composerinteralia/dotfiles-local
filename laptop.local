@@ -1,0 +1,15 @@
+#!/bin/sh
+
+brew bundle --file=- <<EOF
+cask "amethyst"
+EOF
+
+if [ ! -d "$HOME/dotfiles" ]; then
+  git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
+fi
+
+if [ ! -d "$HOME/dotfiles-local" ]; then
+  git clone git://github.com/composerinteralia/dotfiles-local ~/dotfiles-local
+fi
+
+env RCRC=$HOME/dotfiles/rcrc rcup

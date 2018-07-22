@@ -1,14 +1,16 @@
 My customizations to complement https://github.com/thoughtbot/dotfiles
+and https://github.com/thoughtbot/laptop
 
 ### Installation
 
 ```sh
-git clone git://github.com/composerinteralia/dotfiles-local ~/dotfiles-local
+curl -o "$HOME/.laptop.local" \
+  --remote-name https://raw.githubusercontent.com/composerinteralia/dotfiles-local/master/laptop.local 
+curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+```
 
-git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
+Review the scripts and then run:
 
-brew tap thoughtbot/formulae
-brew install rcm
-
-env RCRC=$HOME/dotfiles/rcrc rcup
+```sh
+sh mac 2>&1 | tee ~/laptop.log
 ```
