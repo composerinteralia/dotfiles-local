@@ -1,6 +1,3 @@
-" Run tests in a separate tmux pane
-let test#strategy = "vtr"
-
 " Use color scheme from https://github.com/arcticicestudio/nord-vim
 colorscheme nord
 
