@@ -1,5 +1,6 @@
 alias .d='cd ~/dotfiles-local'
 alias .r='source ~/.zshrc'
+alias ag='ag -s'
 alias be='bundle exec'
 alias dt='cd ~/Desktop'
 alias notes='cd ~/notes; git pull; vim scratch.txt; git commit -am "Update"; git push; cd -'
