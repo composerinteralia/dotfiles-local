@@ -4,6 +4,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'AndrewRadev/splitjoin.vim'
 
 UnPlug 'ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
