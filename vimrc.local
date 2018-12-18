@@ -18,6 +18,10 @@ nnoremap <leader>h :e %:h
 noremap <C-Q> <ESC>
 noremap! <C-Q> <ESC>
 
+" Run queries with dadbod
+nnoremap <leader>dd (V):DB<CR>
+nnoremap <leader>df :DB < %<CR>
+
 " Make splitjoin behave reasonably
 let g:splitjoin_ruby_curly_braces = 0
 let g:splitjoin_ruby_hanging_args = 0
