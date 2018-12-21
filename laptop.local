@@ -2,6 +2,7 @@
 
 brew bundle --file=- <<EOF
 cask "amethyst"
+cask "postgres"
 EOF
 
 if [ ! -d "$HOME/dotfiles" ]; then
