@@ -27,6 +27,10 @@ noremap! <C-Q> <ESC>
 nnoremap <leader>dd (V):DB<CR>
 nnoremap <leader>df :DB < %<CR>
 
+" Navigate between ale errors
+nnoremap [r <Plug>(ale_previous_wrap)
+nnoremap ]r <Plug>(ale_next_wrap)
+
 " Make splitjoin behave reasonably
 let g:splitjoin_ruby_curly_braces = 0
 let g:splitjoin_ruby_hanging_args = 0
