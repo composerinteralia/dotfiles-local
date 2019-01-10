@@ -1,6 +1,10 @@
 " Use color scheme from https://github.com/arcticicestudio/nord-vim
 colorscheme nord
 
+" Highlight curson position
+set cursorline
+set cursorcolumn
+
 " automatically rebalance windows on resize
 autocmd! VimResized
 autocmd VimResized * :wincmd =
