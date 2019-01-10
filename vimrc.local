@@ -4,6 +4,7 @@ colorscheme nord
 " Highlight curson position
 set cursorline
 set cursorcolumn
+nnoremap <leader>cc :set cursorline! cursorcolumn!<CR>
 
 " automatically rebalance windows on resize
 autocmd! VimResized
