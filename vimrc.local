@@ -17,6 +17,8 @@ nnoremap <leader>r :source $MYVIMRC<cr>
 nnoremap <C-P> :GFiles --exclude-standard --others --cached<CR>
 
 " Edit a file  in the current directory
+nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+" Will delete once I get used to e
 nnoremap <leader>h :e %:h
 
 " Use Q to escape
