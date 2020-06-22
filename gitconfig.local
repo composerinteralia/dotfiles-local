@@ -3,3 +3,4 @@
   email = danieljamescolson@gmail.com
 [alias]
   l = log --pretty=format:'%C(yellow)%h %C(red)%ad %C(blue)%an %C(green)%d %C(reset)%s' --date=short
+  pr-log = log HEAD...origin/master --reverse --format="%s%n===%n%n%b"
