@@ -13,9 +13,6 @@ autocmd VimResized * :wincmd =
 " Easily reload configuration
 nnoremap <leader>r :source $MYVIMRC<cr>
 
-" Replace ctrlp with FZF
-nnoremap <C-P> :GFiles --exclude-standard --others --cached<CR>
-
 " Edit a file  in the current directory
 nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Get rid of bad muscle memory
