@@ -2,16 +2,4 @@
   name = Daniel Colson
   email = danieljamescolson@gmail.com
 [alias]
-  a = add
-  an = add -N
-  b = branch
-  br = branch --remote
-  ca = commit --amend
-  cf = commit --fixup
-  cl = clone
-  cob = checkout -b
-  com = checkout master
-  d = diff
-  dm = diff master
-  ds = diff --staged
   l = log --pretty=format:'%C(yellow)%h %C(red)%ad %C(blue)%an %C(green)%d %C(reset)%s' --date=short
