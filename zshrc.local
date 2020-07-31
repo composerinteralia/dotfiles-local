@@ -11,21 +11,7 @@ if [[ -f "$HOME/.bash_profile" ]]; then
   source "$HOME/.bash_profile"
 fi
 
-# handy keybindings
-bindkey "^N" history-search-forward
-bindkey "^Q" vi-cmd-mode
-
-# Don't use ^[ for vi-cmd-mode
-bindkey -r "^["
-
-# Show [NORMAL] when in normal mode
-function zle-line-init zle-keymap-select {
-    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]% %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}"
-    zle reset-prompt
-}
-
-zle -N zle-line-init
-zle -N zle-keymap-select
+# Use emacs style bindkey instead of vi
+bindkey -e
 
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
