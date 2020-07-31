@@ -15,11 +15,6 @@ nnoremap <leader>r :source $MYVIMRC<cr>
 
 " Edit a file  in the current directory
 nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-" Get rid of bad muscle memory
-nnoremap <leader>h :echoe "Use e"<CR>
-
-" Stop using Q to escape
-noremap <C-Q> :echoe "Use Ctrl-[ or ESC"<CR>
 
 " Run queries with dadbod
 nnoremap <leader>dd (V):DB<CR>
