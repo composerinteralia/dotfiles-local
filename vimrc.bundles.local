@@ -9,3 +9,4 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'mxw/vim-jsx'
 
 Plug 'tpope/vim-dadbod'
+Plug 'tpope/vim-abolish'
