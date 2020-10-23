@@ -1,6 +1,15 @@
-[user]
-  name = Daniel Colson
-  email = danieljamescolson@gmail.com
 [alias]
   l = log --pretty=format:'%C(yellow)%h %C(red)%ad %C(blue)%an %C(green)%d %C(reset)%s' --date=short
   pr-log = log HEAD...origin/master --reverse --format="%s%n===%n%n%b"
+[commit]
+  gpgsign = true
+[credentials]
+  helper = osxkeychain
+[github]
+  user = composerinteralia
+[pull]
+  ff = only
+[user]
+  name = Daniel Colson
+  email = danieljamescolson@gmail.com
+  signingkey = 88A364BBE77B1353
