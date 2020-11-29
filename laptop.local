@@ -1,9 +1,7 @@
 #!/bin/sh
 
 brew bundle --file=- <<EOF
-brew "tmate"
 cask "amethyst"
-cask "postgres"
 EOF
 
 if [ ! -d "$HOME/dotfiles" ]; then
