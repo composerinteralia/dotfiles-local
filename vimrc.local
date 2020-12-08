@@ -1,9 +1,7 @@
 " Use color scheme from https://github.com/arcticicestudio/nord-vim
 colorscheme nord
 
-" Highlight curson position
-set cursorline
-set cursorcolumn
+" Highlight cursor position
 nnoremap <leader>cc :set cursorline! cursorcolumn!<CR>
 
 " automatically rebalance windows on resize
