@@ -1,6 +1,9 @@
 #!/bin/sh
 
 brew bundle --file=- <<EOF
+brew graphviz
+brew ragel
+brew tree
 cask "amethyst"
 EOF
 
