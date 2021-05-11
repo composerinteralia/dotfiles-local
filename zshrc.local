@@ -3,9 +3,6 @@ if [[ -z "$TMUX" ]]; then
   tat
 fi
 
-# load FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # for cases where setup scripts write to .bash_profile
 if [[ -f "$HOME/.bash_profile" ]]; then
   source "$HOME/.bash_profile"
@@ -14,4 +11,9 @@ fi
 # Use emacs style bindkey instead of vi
 bindkey -e
 
+# Postgres App
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# Init
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.cargo/env ] && source ~/.cargo/env
