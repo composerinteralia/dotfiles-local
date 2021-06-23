@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Nice clean Dock
+defaults write com.apple.dock persistent-apps {}
+killall Dock
+
 brew bundle --file=- <<EOF
 brew "graphviz"
 brew "ragel"
