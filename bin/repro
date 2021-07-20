@@ -2,20 +2,20 @@
 
 templates = %w[
 action_controller_gem
-action_controller_master
+action_controller_main
 action_mailbox_gem
-action_mailbox_master
+action_mailbox_main
 active_job_gem
-active_job_master
+active_job_main
 active_record_gem
-active_record_master
+active_record_main
 active_record_migrations_gem
-active_record_migrations_master
+active_record_migrations_main
 active_storage_gem
-active_storage_master
+active_storage_main
 benchmark
 generic_gem
-generic_master
+generic_main
 ].zip(0..).to_h.invert
 
 puts "Choose a reproduction script template"
@@ -25,7 +25,7 @@ end
 
 template = templates[Integer(gets)]
 
-url = "https://raw.githubusercontent.com/rails/rails/master/guides/bug_report_templates/#{template}.rb"
+url = "https://raw.githubusercontent.com/rails/rails/main/guides/bug_report_templates/#{template}.rb"
 output = "#{template}_reproduction_#{Time.now.to_i}.rb"
 
 `curl #{url} -o #{output}`
