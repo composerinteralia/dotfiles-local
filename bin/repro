@@ -26,7 +26,7 @@ end
 template = templates[Integer(gets)]
 
 url = "https://raw.githubusercontent.com/rails/rails/main/guides/bug_report_templates/#{template}.rb"
-output = "#{template}_reproduction_#{Time.now.to_i}.rb"
+output = "#{template}_reproduction_#{Time.now.to_i}_test.rb"
 
 `curl #{url} -o #{output}`
 `echo "#{output}" | pbcopy`
