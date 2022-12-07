@@ -9,6 +9,9 @@ bindkey -e
 # Postgres App
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
+# Use bison from homebrew
+export PATH="/usr/local/opt/bison/bin:$PATH"
+
 # Init
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.cargo/env ] && source ~/.cargo/env
