@@ -2,7 +2,7 @@
 set -g status-left-length 50
 set -g status-right " Pane# #P -- #(date '+%a, %b %d %I:%M')"
 
-# Sane bind key
+# Strain-free bind key
 unbind C-b
 set -g prefix C-s
 bind-key -r C-s send-prefix
